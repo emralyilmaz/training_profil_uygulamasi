@@ -13,18 +13,28 @@ class Profil extends StatelessWidget {
       appBar: AppBar(
         title: Text("Profil"),
         centerTitle: true,
-        backgroundColor: Color.fromRGBO(10, 189, 149, 1),
+        backgroundColor: Color.fromRGBO(204, 122, 101, 1),
       ),
-      backgroundColor: Color.fromRGBO(255, 222, 99, 1),
+      backgroundColor: Color.fromRGBO(230, 218, 166, 1),
       body: Padding(
-        padding: EdgeInsets.fromLTRB(50, 40, 30, 0),
+        padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage("images/1.jpeg"),
+                radius: 50.0,
+              ),
+            ),
+            Divider(
+              color: Color.fromRGBO(166, 175, 146, 1),
+              height: 90,
+            ),
             Text(
               "ISIM",
               style: TextStyle(
-                  color: Color.fromRGBO(190, 173, 121, 1), letterSpacing: 2.0),
+                  color: Color.fromRGBO(166, 175, 146, 1), letterSpacing: 2.0),
             ),
             SizedBox(
               height: 10.0,
@@ -32,7 +42,7 @@ class Profil extends StatelessWidget {
             Text(
               "Emral",
               style: TextStyle(
-                  color: Color.fromRGBO(155, 155, 155, 1),
+                  color: Color.fromRGBO(57, 33, 67, 1),
                   letterSpacing: 2.0,
                   fontSize: 25.0,
                   fontWeight: FontWeight.bold),
@@ -41,7 +51,7 @@ class Profil extends StatelessWidget {
             Text(
               "SOYISIM",
               style: TextStyle(
-                  color: Color.fromRGBO(190, 173, 121, 1), letterSpacing: 2.0),
+                  color: Color.fromRGBO(166, 175, 146, 1), letterSpacing: 2.0),
             ),
             SizedBox(
               height: 10.0,
@@ -49,7 +59,7 @@ class Profil extends StatelessWidget {
             Text(
               "Yılmaz",
               style: TextStyle(
-                  color: Color.fromRGBO(155, 155, 155, 1),
+                  color: Color.fromRGBO(57, 33, 67, 1),
                   letterSpacing: 2.0,
                   fontSize: 25.0,
                   fontWeight: FontWeight.bold),
@@ -59,13 +69,13 @@ class Profil extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   Icons.email,
-                  color: Color.fromRGBO(10, 189, 149, 1),
+                  color: Color.fromRGBO(204, 122, 101, 1),
                 ),
                 SizedBox(width: 15),
                 Text(
                   "emral.yilmaz1@gmail.com",
                   style: TextStyle(
-                      color: Color.fromRGBO(155, 155, 155, 1),
+                      color: Color.fromRGBO(57, 33, 67, 1),
                       fontSize: 15.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.5),
