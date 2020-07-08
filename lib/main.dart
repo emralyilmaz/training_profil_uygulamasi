@@ -17,7 +17,7 @@ class Profil extends StatelessWidget {
       ),
       backgroundColor: Color.fromRGBO(255, 222, 99, 1),
       body: Padding(
-        padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
+        padding: EdgeInsets.fromLTRB(50, 40, 30, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -54,6 +54,24 @@ class Profil extends StatelessWidget {
                   fontSize: 25.0,
                   fontWeight: FontWeight.bold),
             ),
+            SizedBox(height: 30),
+            Row(
+              children: <Widget>[
+                Icon(
+                  Icons.email,
+                  color: Color.fromRGBO(10, 189, 149, 1),
+                ),
+                SizedBox(width: 15),
+                Text(
+                  "emral.yilmaz1@gmail.com",
+                  style: TextStyle(
+                      color: Color.fromRGBO(155, 155, 155, 1),
+                      fontSize: 15.0,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.5),
+                )
+              ],
+            )
           ],
         ),
       ),
